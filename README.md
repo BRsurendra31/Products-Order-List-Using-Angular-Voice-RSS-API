@@ -1,27 +1,52 @@
-# ProductOrderList
+# Product Order List Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+## Description
 
-## Development server
+This Angular application allows users to manage a list of products with their quantities. It features an interactive interface where users can add products, specify quantities, and view their orders. The application also supports voice feedback to read out the order list.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Add products with specified quantities.
+- Display a dynamic list of selected products.
+- Show the order list in a formatted table.
+- Voice feedback to read out the order list.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- **Angular**: Framework for building the application.
+- **CSS**: Styling for a modern and polished look.
+- **HTML**: Structure of the web pages.
+- **Voice RSS API** (or another text-to-speech service): Provides voice feedback for the order list.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the Repository**:
 
-## Running end-to-end tests
+   ```bash
+   git clone https://github.com/yourusername/product-order-list.git
+cd product-order-list
+npm install
+ng serve
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 5. **Usage**
+
+Explain how to use the application once it's up and running.
+
+```markdown
+## Usage
+
+1. **Add Products**: Use the dropdown to select a product and specify the quantity. Click "Add" to include it in the list.
+2. **View Order**: Click "Show Order" to display the current list of selected products and their quantities.
+3. **Voice Feedback**: Click "What is my Order?" to have the application read out the order list.
+
+## Configuration
+
+1. **Obtain a Voice RSS API Key** from [Voice RSS](https://voicerss.org/) or another text-to-speech service.
+2. **Replace `YOUR_API_KEY`** in the `src/app/app.component.ts` file with your actual API key.
+
+   ```typescript
+   private apiKey = 'YOUR_API_KEY'; // Replace with your API key
+
