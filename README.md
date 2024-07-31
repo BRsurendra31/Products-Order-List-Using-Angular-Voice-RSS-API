@@ -28,7 +28,7 @@ This Angular application allows users to manage a list of products with their qu
    git clone https://github.com/yourusername/product-order-list.git
 2. **Navigate to the Project Directory**:
    ```bash
-   cd product-order-list
+   cd Products-Order-List-Using-Angular-Voice-RSS-API
 3. **Install the Dependencies**:
    ```bash
    npm install
