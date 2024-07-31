@@ -1,4 +1,6 @@
-# Product Order List Application
+
+# App link
+[Products-Order-List-Using-Angular-Voice-RSS-API ](https://products-order-list.netlify.app/)
 
 ## Description
 
@@ -22,31 +24,16 @@ This Angular application allows users to manage a list of products with their qu
 ## Installation
 
 1. **Clone the Repository**:
-
    ```bash
    git clone https://github.com/yourusername/product-order-list.git
-cd product-order-list
-npm install
-ng serve
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd product-order-list
+3. **Install the Dependencies**:
+   ```bash
+   npm install
+4. **Start the Development Server**:
+ ```bash
+   ng serve
 
-
-
-### 5. **Usage**
-
-Explain how to use the application once it's up and running.
-
-```markdown
-## Usage
-
-1. **Add Products**: Use the dropdown to select a product and specify the quantity. Click "Add" to include it in the list.
-2. **View Order**: Click "Show Order" to display the current list of selected products and their quantities.
-3. **Voice Feedback**: Click "What is my Order?" to have the application read out the order list.
-
-## Configuration
-
-1. **Obtain a Voice RSS API Key** from [Voice RSS](https://voicerss.org/) or another text-to-speech service.
-2. **Replace `YOUR_API_KEY`** in the `src/app/app.component.ts` file with your actual API key.
-
-   ```typescript
-   private apiKey = 'YOUR_API_KEY'; // Replace with your API key
 
