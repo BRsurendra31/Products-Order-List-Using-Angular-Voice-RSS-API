@@ -1,0 +1,16 @@
+<!-- product-row.component.html -->
+<tr>
+    <td>
+      <select (change)="handleProductChange($event, 'name')" [value]="product.name">
+        <option value="" disabled selected>Choose Product</option>
+        <option *ngFor="let item of ['Pencil', 'Eraser', 'Pens']" [value]="item">{{item}}</option>
+      </select>
+    </td>
+    <td>
+      <select (change)="handleProductChange($event, 'quantity')" [value]="product.quantity">
+        <option value="" disabled selected>Choose Quantity</option>
+        <option *ngFor="let qty of [1, 2, 3, 4, 5]" [value]="qty">{{qty}}</option>
+      </select>
+    </td>
+  </tr>
+  

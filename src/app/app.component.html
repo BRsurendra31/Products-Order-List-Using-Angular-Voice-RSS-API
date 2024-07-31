@@ -1,0 +1,18 @@
+<h1>Product Order List</h1>
+<table>
+  <tr>
+    <th>Product Name</th>
+    <th>Quantity</th>
+  </tr>
+  <tr *ngFor="let product of products; let i = index">
+    <app-product-row
+      [product]="product"
+      (productChange)="handleProductChange(i, $event)">
+    </app-product-row>
+  </tr>
+</table>
+<button (click)="addProduct()">Add Product</button>
+<button (click)="showOrder()">Show Order</button>
+<button (click)="readOrder()">What is my Order?</button>
+
+<app-order-list *ngIf="order.length > 0" [order]="order"></app-order-list>
